@@ -1,0 +1,119 @@
+<!-- #CECI EST UN COMMENTAIRE -->
+
+<!-- 
+    <!DOCTYPE> : une instructions qui indique au navigateur quel type de fichier il va lire
+    <html> : Parent de ma page html
+    <head> : definit l'entete de notre page
+    <body> : definit le corps de notre page (contenu visible de ma page)
+-->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Structure d'un document HTML</title>
+    <!-- connexion avec service tierces -->
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+</head>
+<body>
+    <!-- 
+        Les balise inline et les balises block
+        une balise inline c'est comme un petit outil que nous pouvons inserer à l'interieur
+        d'une autre balise -< mettre en gras, ou en italique etc...
+        elle ne crée pas de saut de ligne , elle s'adaptent à la taille du contenu qu'elles contient
+
+        La balise block : c'est comme un block de costruction -> elle crée un section distincte sur la page (paragraphe, titre,listes, tableau etc ...)
+        occupe toute la largeur de l'ecran -> utilisé pour structurer ma page
+     -->
+     <h1>Structure d'une page HTML</h1>
+      <!-- Les titres sont utilisés pour structurer en hierarchie l'information -->
+    <h2>Les titres (h2,h3, h4)</h2>
+
+    <h1>Titre principal : je devrais être unique dans la page.</h1>
+
+    <h2>Je suis un titre secondaire</h2>
+
+    <h3>Titre assez fort</h3>
+
+    <h4>Titre un peu plus faible</h4>
+
+    <h5>Titre faible</h5>
+
+    <h6>Titre qui ressemble à du texte mais qui reste un titre</h6>
+
+    <h2>Les paragraphes</h2>
+ <!-- Organise et regroupe du texte -->
+    <p>Ceci est un paragraphe: il contient du texte qui forme un bloc cohérent</p>
+    <!-- retour à la ligne-->
+    <p>Grace à la balise orpheline "br" <br>je force un retour à la ligne</p>
+
+    <h2>Mis en gras et en italique</h2>
+    <p>Pour mettre en évidence du texte en grasj'utilise la balise <strong>Je suis en gras </strong>et pour mettre du texte en italique j'utilise <em>Je suis en italique</em></p>
+    
+    <h2>Les liens hypertext</h2>
+    <!-- Les liens hypertext sont essentiels pour naviguer dans différentes pages -->
+
+    <a href="https://www.google.fr/" target="_blank">Aller sur le site Google(lien externe)</a>
+    <a href="contact.html">Aller sur la page Contact (lien interne)</a>
+
+    <h2>Les listes (ordonnée ou non ordonnée)</h2>
+    <ul>
+        <li>Shanks le Roux</li>
+        <li>Barbe Noire</li>
+        <li>Luffy au chapeau de paille</li>
+        <li>Buggy le clown</li>
+    </ul>
+
+    <!-- DL liste ordonnée-->
+    <ol>
+        <li>Element 1</li>
+        <li>Element 2</li>
+        <li>Element 3</li>
+    </ol>
+
+    <h2>Les tableaux</h2>
+    <!-- Organisée des données-->
+
+    <table>
+        <thead>
+            <tr>
+                <th>Month</th>
+                <th>Age</th>
+                <th>Name</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>January</td>
+                <td>25</td>
+                <td>Onizuka</td>
+            </tr>
+            <tr>
+                <td>January</td>
+                <td>25</td>
+                <td>Onizuka</td>
+            </tr>
+            <tr>
+                <td>January</td>
+                <td>25</td>
+                <td>Onizuka</td>
+            </tr>
+            <tr>
+                <td>January</td>
+                <td>25</td>
+                <td>Onizuka</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>Les balises div et span</h2>
+    <p>Ces balises sont des balises génériques qui sont utilisé pour regrouper ou diviser des élément HTML sans avoir de signification particulière</p>
+
+    <div>
+        <p>La div est un conteneur de bloc qui est utilisé pour appliquer un style à un ensemble d'éléments</p>
+    </div>
+
+    <p>Le span est un balise inline <span>Ceci me permet d'appliquer du style sur ce morceau de texte</span></p>
+
+</body>
+</html>
