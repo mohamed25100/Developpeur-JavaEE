@@ -14,6 +14,7 @@
 
 
 | Atelier : Structurer une page HTML |
+|-----------------------------------|
 |Les Médias                         |
 |-----------------------------------|
 | Les images et format d'image      |
