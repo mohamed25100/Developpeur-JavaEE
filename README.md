@@ -10,6 +10,6 @@
 | Jour            | Projet               |
 |----------------------|--------------------|
 | 19 juin 2023 |    [Structure d'un document](https://intro.mohamed25100.repl.co/)  |
-| 19 juin 2023 | [Structurer une page html](https://structurer-une-page-html.mohamed25100.repl.co)   |
+| 19 juin 2023 | [Atelier : Structurer une page html](https://structurer-une-page-html.mohamed25100.repl.co)   |
 
 
