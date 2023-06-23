@@ -13,3 +13,10 @@
 | 19 juin 2023 | [Atelier : Structurer une page html](https://structurer-une-page-html.mohamed25100.repl.co)   |
 
 
+| Atelier : Structurer une page HTML |
+|Les Médias                         |
+|-----------------------------------|
+| Les images et format d'image      |
+|Les attributs essentiels (src, alt, etc) |
+| Intégrer des sons et des vidéos    |
+|Autres médias                     |
