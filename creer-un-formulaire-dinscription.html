@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boutons et formulaires</title>
+</head>
+
+<body>
+    <h1>Les boutons et formulaires</h1>
+    <h2>Création d'un bouton</h2>
+
+    <button>Cliquer ici</button>
+    <h3>3 types de boutons</h3>
+    <ul>
+        <li>Button : <button type="button">Type Button</button></li>
+        <li>Submit : <button type="submit">Type submit</button></li>
+        <li>Reset : <button type="reset">Bouton de rénitialisation</button></li>
+    </ul>
+
+    <h2>Les balises de formulaires</h2>
+    <p>Les balises de Formulaire en HTML permettent de créer des formulaires interactifs</p>
+
+    <form>
+        <fieldset>
+            <legend>Informations personelles</legend>
+        
+        <h3>Champs de texte</h3>
+        <!-- Etique + champs -->
+        <label for="name">Votre nom:</label>
+        <input type="text" id="name" name="nom" value="Mohamed" disabled placeholder="Entrer votre nom ici...">
+
+        <h3>Champs numérique</h3>
+        <label for="name">Votre age:</label>
+        <input type="number" id="age" name="age" value="22" placeholder="Entrer votre nom ici...">
+
+        <h3>Champs mot de passe</h3>
+        <label for="password">Votre mot de passe:</label>
+        <input type="password" id="password" name="password" placeholder="********">
+
+        <h3>Champs multiligne</h3>
+        <label for="desc">Votre description :</label>
+        <textarea name="desc" id="desc" cols="30" rows="4" placeholder="Blablabla..."></textarea>
+        </fieldset>
+        
+        <fieldset>
+            <legend>Informations complémentaire</legend>
+        
+        <h3>Bouton radio</h3>
+        <label for="opt1">options 1</label>
+        <input type="radio" id="opt1" name="radio" value="opt1">
+
+        <label for="opt2">options 2</label>
+        <input type="radio" id="opt2" name="radio" value="opt2">
+
+        <h3>Case à cocher</h3>
+        <input type="checkbox" id="check1" name="check1" value="check1">
+        <label for="check1">Options 1</label>
+        <br><br>
+        <input type="checkbox" id="check1" name="check1" value="check2">
+        <label for="check2">Options 2</label>
+
+        <h3>Champs Date</h3>
+        <label for="birth">Votre date de naissance</label>
+        <input id="birth" type="date">
+
+        <h3>Liste déroulantes</h3>
+        <label for="select">Choix :</label>
+        <select name="select" id="select">
+            <option value="opt1">Option 1</option>
+            <option value="opt2">Option 2</option>
+            <option value="opt3">Option 3</option>
+            <option value="opt4">Option 4</option>
+            <option value="opt5">Option 5</option>
+        </select>
+    </fieldset>
+        <h3>Bouton d'envoie</h3>
+        <button type="submit">envoyé</button>
+        <input type="submit" value="Envoyé 2">
+    </form>
+
+
+</body>
+
+</html>
