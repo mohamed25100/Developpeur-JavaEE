@@ -14,7 +14,7 @@
 
 ## [Atelier : Styliser une page existante](https://reproduire-le-template.mohamed25100.repl.co)
 
-## Atelier : Positionner différents blocs sur une page;
+## [Atelier : Positionner différents blocs sur une page](https://flexboxfroggy.com/#fr)
 
 ## Atelier : Créer un formulaire d'inscription
 
