@@ -7,17 +7,11 @@
 | Webmaster Intermédiaire : RWD             | 22 juin 2023 - 23 juin 2023   | À distance |
 
 
+| Atelier : Structurer une page html | Atelier : Intégrer plusieurs médias sur une page html | Atelier : Attacher une feuille css à une page html | Atelier : Styliser une page existante|Atelier : Positionner différents blocs sur une page |
+|------------------------------------|-------------------------------------------------------|----------------------------------------------------|--------------------------------------|----------------------------------------------------|
+
 | Jour            | Projet               |
 |----------------------|--------------------|
-| 19 juin 2023 |    [Structure d'un document](https://intro.mohamed25100.repl.co/)  |
-| 19 juin 2023 | [Atelier : Structurer une page html](https://structurer-une-page-html.mohamed25100.repl.co)   |
-| 19 juin 2023 | [Atelier : Intégrer plusieurs médias sur une page html]()   |
-
-
-| Atelier : Structurer une page HTML |
-|-----------------------------------|
-|**Les Médias**                       |
-| Les images et format d'image      |
-|Les attributs essentiels (src, alt, etc) |
-| Intégrer des sons et des vidéos    |
-|Autres médias                     |
+| 19 juin 2023 ||
+| 19 juin 2023 ||
+| 19 juin 2023 ||
