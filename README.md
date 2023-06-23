@@ -12,7 +12,7 @@
 
 ## [Atelier : Attacher une feuille css à une page html](https://attacher-une-feuille-css-a-une-page-html.mohamed25100.repl.co)
 
-## Atelier : Styliser une page existante
+## [Atelier : Styliser une page existante](https://reproduire-le-template.mohamed25100.repl.co)
 
 ## Atelier : Positionner différents blocs sur une page;
 
