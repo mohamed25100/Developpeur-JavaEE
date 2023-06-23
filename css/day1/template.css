@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    color: rgb(129, 129, 129);
+    font-family: Roboto Slab;
+}
+
+body > div {
+    max-width: 1300px;
+    margin: 80px auto;
+}
+
+.separator {
+    height: 1px;
+    background-color: rgb(129, 129, 129);
+}
+
+.first-container > div:nth-child(1) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.5em;
+    border-bottom: 5px rgb(214, 4, 4) solid;
+}
+
+.first-container > div:nth-child(1) p {
+    margin: 15px 0;
+}
+
+.first-container > div:nth-child(2) {
+    display: flex;
+    margin-top: 70px;
+    gap: 40px;
+    align-items: center;
+}
+
+.first-container b {
+    color: rgb(75, 75, 75);
+}
+
+.first-container i {
+    margin-left: 10px;
+}
+
+.first-container img {
+    width: 700px;
+    border-radius: 10px;
+}
+
+h1 {
+    font-size: 4em;
+    color: rgb(75, 75, 75);
+    margin: 0;
+}
+
+h2 {
+    color: rgb(75, 75, 75);
+    display: inline;
+    padding: 0 10px 10px 0px;
+    box-shadow: rgb(214, 4, 4) 2px 5px 0 -2px;
+}
+
+h4 {
+    color: rgb(75, 75, 75);
+    font-size: 1.5em;
+}
+
+.subtitle {
+    margin: 20px 0;
+}
+
+.heading-paragraph {
+    line-height: 1.9em;
+}
+
+button {
+    color: rgb(214, 4, 4);
+    padding: 10px 25px;
+    border: rgb(214, 4, 4) solid 2px;
+    font-weight: bold;
+    background: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.second-container > div {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 60px;
+    gap: 20px;
+}
+
+.second-container > div > div {
+    display: flex;
+    width: calc(50% - 10px);
+    gap: 40px;
+    align-items: center;
+}
+
+.second-container i {
+    font-size: 50px;
+    color: rgb(214, 4, 4);
+    position: relative;
+    width: 50px;
+    height: 50px;
+    display: block;
+    padding: 20px;
+    margin: 20px;
+}q
+q
+.second-container i::after {
+    border: 1px solid rgb(129, 129, 129);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    transform: rotate(45deg);
+    border-radius: 5px;
+}
+
+p {
+    line-height: 1.5em;
+}
+
+.third-container > div {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 70px;
+}
+
+.third-container > div > div {
+    padding: 30px;
+}
+
+.third-container img {
+   width: 100%;
+   border-radius: 10px;
+}
+
+.third-container > div > div:nth-child(2), .third-container > div > div:nth-child(5) {
+    border-left: 1px solid rgb(197, 197, 197);
+    border-right: 1px solid rgb(197, 197, 197);
+}
+
+.third-container > div > div:nth-child(1),
+.third-container > div > div:nth-child(2),
+.third-container > div > div:nth-child(3) {
+    border-bottom: 1px solid rgb(197, 197, 197);
+}
+
+.icon{
+    border: 1px solid grey;
+    transform: rotate(45deg);
+}
+
+#icon i {
+    transform: rotate(-45deg);
+    padding: 0;
+}
+
+#icon i::after {
+    display: none;
+}
