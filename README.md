@@ -6,7 +6,7 @@
 | Webmaster Intermédiaire : HTML5/CSS3 | 20 juin 2023 - 21 juin 2023       | À distance |
 | Webmaster Intermédiaire : RWD             | 22 juin 2023 - 23 juin 2023   | À distance |
 
-## Atelier : Structurer une page html
+## [Atelier : Structurer une page html](https://structurer-une-page-html.mohamed25100.repl.co)
 
 ## [Atelier : Intégrer plusieurs médias sur une page html](https://integrer-plusieurs-medias-sur-une-page-html.mohamed25100.repl.co/)
 
