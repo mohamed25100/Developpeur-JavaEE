@@ -49,10 +49,3 @@
 ## Atelier : Eviter le débordements d'images/vidéos
 
 ## Atelier : Création de site responsive pure css avec des media-queries
-
-
-| Jour            | Projet               |
-|----------------------|--------------------|
-| 19 juin 2023 ||
-| 19 juin 2023 ||
-| 19 juin 2023 ||
