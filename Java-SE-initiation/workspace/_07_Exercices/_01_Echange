@@ -1,0 +1,16 @@
+package _07_Exercices;
+
+public class _01_Echange {
+
+	// Permuter 2 variables
+
+	/*
+	 * Exemple : Données d'entrée : a = 5, b = 9 Sortie prévue : Avant l’échange : a
+	 * = 5, b = 9 Après l’échange : a = 9, b = 5
+	 */
+
+	public static void main(String[] args) {
+
+
+	}
+}
