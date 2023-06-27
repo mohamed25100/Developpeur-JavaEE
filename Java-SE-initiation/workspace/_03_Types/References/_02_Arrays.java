@@ -32,6 +32,20 @@ public class _02_Arrays {
 			System.out.println(names[i]);
 		}
 		
+		// tableau de tableaux
+		
+		System.out.println("\n************ TABLEAU DE TABLEAUX ************\n");
+		
+		String[][] names2D = {{"riri", "fifi", "loulou"}, {"donald", "daisy", "picsou"}};
+		
+		for (int line = 0; line < names2D.length; line++) {
+	
+			for(int col = 0; col < names2D[line].length; col ++) {
+				System.out.print(names2D[line][col] + " ");
+			}
+			System.out.println();
+		}
+		
 		System.out.println("\n ----- Arrays : Classe utilitaire pour les tableaux");
 		
 		String[] tabStr = new String[5];
