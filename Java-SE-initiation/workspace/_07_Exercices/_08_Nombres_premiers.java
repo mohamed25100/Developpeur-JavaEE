@@ -1,5 +1,5 @@
 package _07_Exercices;
-
+import java.util.Scanner;
 public class _08_Nombres_premiers {
 	/*
 	 * Le problème est de déterminer si un nombre entier est un nombre premier.
@@ -22,4 +22,31 @@ public class _08_Nombres_premiers {
 	 * 
 	 * Ecrivez un premier programme qui effectue ce calcul. On utilisera une boucle FOR afin de tester tous les diviseurs de 2 au nombre – 1. Le programme demandera un nombre entier et indiquera s’il est premier ou non.
 	 */
+	public static boolean estPremier(int nombre) {
+	if (nombre <= 1) {
+	    return false;
+	} else {
+	    for (int i = 2; i < nombre; i++) {
+		if (nombre % i == 0) {
+		    return false;
+		}
+	    }
+	}
+	return true;
+	}
+	
+	public static void main(String[] args) {
+		// La classe Scanner permet de récupérer des informations depuis la console
+		Scanner clavier = new Scanner(System.in);
+	
+	System.out.print("Entrez un nombre entier : ");
+	int nombre = clavier.nextInt();
+	
+	if (estPremier(nombre)) {
+	    System.out.println(nombre + " est un nombre premier.");
+	} else {
+	    System.out.println(nombre + " n'est pas un nombre premier.");
+	}
+	clavier.close();
+	}
 }
