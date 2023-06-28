@@ -1,5 +1,7 @@
 package _07_Exercices;
 
+import java.util.Scanner;
+
 public class _11_Fibonacci {
 	/*
 	 * 
@@ -20,5 +22,30 @@ public class _11_Fibonacci {
 	 * On initialise les formules avec deux conditions initiales : F0 = 0, F1 = 1
 	 * Formule de récurrence : Fn = Fn-1 + Fn-2 pour n >= 2
 	 */
-}
 
+	public static int fibonacci(int n) {
+		if (n == 0) {
+		    return 0;
+		} else if (n == 1) {
+		    return 1;
+		} else {
+		    return fibonacci(n - 1) + fibonacci(n - 2);
+		}
+	}
+
+public static void main(String[] args) {
+	Scanner scanner = new Scanner(System.in);
+
+	System.out.print("Entrez le nombre d'éléments de la suite de Fibonacci : ");
+	int nombreElements = scanner.nextInt();
+
+	System.out.println("Suite de Fibonacci :");
+	for (int i = 0; i < nombreElements; i++) {
+	    int element = fibonacci(i);
+	    System.out.print(element + " ");
+	}
+
+	scanner.close();
+    }
+
+}
