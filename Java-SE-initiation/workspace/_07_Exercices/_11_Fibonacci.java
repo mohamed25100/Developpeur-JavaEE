@@ -33,19 +33,22 @@ public class _11_Fibonacci {
 		}
 	}
 
-public static void main(String[] args) {
-	Scanner scanner = new Scanner(System.in);
+	public static void main(String[] args) {
+		// La classe Scanner permet de récupérer des informations depuis la console
+		Scanner clavier = new Scanner(System.in);
 
-	System.out.print("Entrez le nombre d'éléments de la suite de Fibonacci : ");
-	int nombreElements = scanner.nextInt();
 
-	System.out.println("Suite de Fibonacci :");
-	for (int i = 0; i < nombreElements; i++) {
-	    int element = fibonacci(i);
-	    System.out.print(element + " ");
+		
+		System.out.print("Entrez le nombre d'éléments de la suite de Fibonacci : ");
+		int nombreElements = clavier.nextInt();
+		
+		System.out.println("Suite de Fibonacci :");
+		for (int i = 0; i < nombreElements; i++) {
+		    int element = fibonacci(i);
+		    System.out.print(element + " ");
+		}
+		
+		clavier.close();
 	}
-
-	scanner.close();
-    }
 
 }
