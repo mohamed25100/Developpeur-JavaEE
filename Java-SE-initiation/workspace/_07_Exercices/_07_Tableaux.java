@@ -26,43 +26,43 @@ public class _07_Tableaux {
 	 * Données de sortie : [8.5, 9.5, 11.0, 12.5, 18.0]
 	 */
 
-public static void main(String[] args) {
-	Scanner clavier = new Scanner(System.in);
-	System.out.print("Saisir le nombre de notes : ");
-	int nNotes = clavier.nextInt();
-	double[] notes = new double[nNotes + 1]; // On rajoute une case supplémentaire en prévision de la newNote
-	// On demande chacune des notes du tableau de notes initial
-	for (int i = 0; i < nNotes; i++) {
-		System.out.print("Note " + (i+1) + " : ");
-		notes[i] = clavier.nextDouble();
-	}
-	System.out.print("Saisir la nouvelle note ");
-	double newNote = clavier.nextDouble();
-	// détermination de la position de la nouvelle note dans le tableau final
-	int newPos = 0;
-	
-	for (int i = 0; i < notes.length; i++) {
-		if (notes[i] < newNote) {
-			newPos++;
+	public static void main(String[] args) {
+		Scanner clavier = new Scanner(System.in);
+		System.out.print("Saisir le nombre de notes : ");
+		int nNotes = clavier.nextInt();
+		double[] notes = new double[nNotes + 1]; // On rajoute une case supplémentaire en prévision de la newNote
+		// On demande chacune des notes du tableau de notes initial
+		for (int i = 0; i < nNotes; i++) {
+			System.out.print("Note " + (i+1) + " : ");
+			notes[i] = clavier.nextDouble();
 		}
+		System.out.print("Saisir la nouvelle note ");
+		double newNote = clavier.nextDouble();
+		// détermination de la position de la nouvelle note dans le tableau final
+		int newPos = 0;
+		
+		for (int i = 0; i < notes.length; i++) {
+			if (notes[i] < newNote) {
+				newPos++;
+			}
+		}
+	
+		// Décallage au fond du tableau des notes supérieures à la nouvelle note 
+		
+		for(int i = nNotes; i > newPos -1 ; i--)
+		{
+			notes[i] = notes[i - 1];
+		}
+		
+		//Insertion de la nouvelle note à sa position
+		notes[newPos - 1] = newNote;
+		
+		// Affichage du tableau final
+		for (double note : notes) {
+			System.out.print(note + " ");
+		}
+		clavier.close();
 	}
-	
-	// Décallage au fond du tableau des notes supérieures à la nouvelle note 
-	
-	for(int i = nNotes; i > newPos -1 ; i--)
-	{
-		notes[i] = notes[i - 1];
-	}
-	
-	//Insertion de la nouvelle note à sa position
-	notes[newPos - 1] = newNote;
-	
-	// Affichage du tableau final
-	for (double note : notes) {
-		System.out.print(note + " ");
-	}
-	clavier.close();
-}
 	public static void deplacerElements(double[] tableau, int positionInsertion, int tailleTableau) {
 		for (int i = tailleTableau - 1; i >= positionInsertion; i--) {
 		    tableau[i + 1] = tableau[i];
