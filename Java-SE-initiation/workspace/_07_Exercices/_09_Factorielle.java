@@ -10,28 +10,28 @@ public class _09_Factorielle {
 	 * 1! = 1;
 	 */
 	
-	public static long calculerFactorielle(int nombre) {
-		if (nombre == 0 || nombre == 1) {
-		    return 1;
-		} else {
-		    return nombre * calculerFactorielle(nombre - 1);
-		}
-	}
-
-	public static void main(String[] args) {
-
+	public static long factorielle(int nombre)
+	{
+		if(nombre == 0 || nombre == 1) return 1;
 		
-	// La classe Scanner permet de récupérer des informations depuis la console
-	Scanner clavier = new Scanner(System.in);
-
-        System.out.print("Entrez un nombre entier : ");
-        int nombre = clavier.nextInt();
-        
-        long factorielle = calculerFactorielle(nombre);
-
-        System.out.println(nombre + "! = " + factorielle);
-
-        clavier.close();
+		return nombre * factorielle(nombre - 1);
 	}
-
+	
+	public static void main(String[] args) {
+		Scanner clavier = new Scanner(System.in);
+		System.out.print("Saisir un nombre entier (pas trop grand...) : ");
+		
+		// 0! = 1
+		// 1! = 1 ON CONNAIT 1! => on peut calculer 2! => puis 3! => puis...
+		// 2! = 1 X 2 = 1! X 2 => pour calcluer 2! il faut d'abord calculer 1 !
+		// 3! = 1 X 2 X 3 = 2! X 3 => pour calcluer 3! il faut d'abord calculer 2 !
+		// 4! = 1 X2 X 3 X 4 = 3! X 4 => pour calcluer 4! il faut d'abord calculer 3 !
+		// n! = (n-1)! X n
+		
+		int nombre = clavier.nextInt();
+		
+		System.out.println(nombre + "! = " + factorielle(nombre));
+		
+		clavier.close();
+	}
 }
