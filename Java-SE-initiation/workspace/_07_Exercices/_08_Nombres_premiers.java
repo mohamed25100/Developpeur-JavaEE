@@ -1,4 +1,4 @@
-package _07_Exercices;
+package _07_Exercices;// **Mohamed**
 import java.util.Scanner;
 public class _08_Nombres_premiers {
 	/*
