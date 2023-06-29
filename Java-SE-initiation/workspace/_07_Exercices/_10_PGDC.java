@@ -12,29 +12,26 @@ public class _10_PGDC {
 	 * Ecrivez un programme permettant de trouver le plus PGCD à partir cet algorithme.
 	 */
 	
-    public static int calculerPGCD(int a, int b) {
-        if (b == 0) {
-            return a;
-        } else {
-            return calculerPGCD(b, a % b);
-        }
-    }
-
-    public static void main(String[] args) {
-        // La classe Scanner permet de récupérer des informations depuis la console
-        Scanner clavier = new Scanner(System.in);
-    
-        System.out.print("Entrez le premier nombre : ");
-        int nombre1 = clavier.nextInt();
-    
-        System.out.print("Entrez le deuxième nombre : ");
-        int nombre2 = clavier.nextInt();
-    
-        int pgcd = calculerPGCD(nombre1, nombre2);
-    
-        System.out.println("Le PGCD de " + nombre1 + " et " + nombre2 + " est : " + pgcd);
-    
-        clavier.close();
-    }
-
+	public static int pgcd(int a,  int b)
+	{
+		int modulo = a % b;
+		
+		if(modulo == 0) return b; else return pgcd(b, modulo);
+	}
+	
+	public static void main(String[] args) {
+		
+		Scanner clavier = new Scanner(System.in);
+		
+		System.out.print("Veuillez entrer un nombre entier : ");
+		int n1 = clavier.nextInt();
+		
+		System.out.print("Veuillez entrer un second nombre entier : ");
+		int n2 = clavier.nextInt();
+		
+		System.out.println("Le pgdc de " + n1 + " et " + n2 + " vaut " + pgcd(n1, n2));
+		
+		clavier.close();
+	}
 }
+
