@@ -15,7 +15,7 @@ public class Client extends User{
 	}
 
 	public boolean isSubscriber() {
-		return false;
+		return isSubscriber;
 	}
 
 	public void setSubscriber(boolean isSubscriber) {
@@ -31,7 +31,7 @@ public class Client extends User{
 
 	@Override
 	public String toString() {
-		if (isSubscriber) {
+		if (this.isSubscriber()) {
 			return super.toString() + "Je suis client. Mon numéro est " + this.getPhone();
 		}
 		else {
