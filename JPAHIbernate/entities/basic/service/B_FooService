@@ -4,8 +4,8 @@ import java.util.List;
 
 import org.springframework.stereotype.Service;
 
-import fr.dawan.springmaven.entities.basic.dao.B_FooRepository;
-import fr.dawan.springmaven.entities.basic.models.B_Foo;
+import fr.dawan.jpahibernate.entities.basic.dao.B_FooRepository;
+import fr.dawan.jpahibernate.entities.basic.models.B_Foo;
 
 @Service
 public class B_FooService {
