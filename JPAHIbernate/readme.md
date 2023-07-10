@@ -1,4 +1,4 @@
-#configuration de la datasource
+# configuration de la datasource
 
 spring.datasource.initialization-mode=always
 # Préciser le driver qui sera utilisé pour gérer l'accès à la BDD
@@ -9,8 +9,8 @@ spring.datasource.url=jdbc:mariadb://localhost:3307/jpahibernate?useSSL=false&us
 spring.datasource.username=root
 spring.datasource.password=
 
-#config de JPA/Hibernate
-#dialect : classe permettant de traduire les req vers le SQL spécifiques au SGBD utilisé
+# config de JPA/Hibernate
+# dialect : classe permettant de traduire les req vers le SQL spécifiques au SGBD utilisé
 spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.MariaDBDialect
 spring.jpa.show-sql=true
 spring.jpa.hibernate.ddl-auto=update
