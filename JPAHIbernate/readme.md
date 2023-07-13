@@ -1,3 +1,3 @@
-#configuration de la datasource
+# configuration de la datasource
 
 - main/resources/application.properties
